@@ -52,7 +52,7 @@ def plot_table(res: dict, aux: dict, path: str) -> None:
                      color=GRAY, ha="right", va="center", rotation=90,
                      xytext=(-38, 0), textcoords="offset points")
         row += len(els)
-    ax1.set_title("the elements: 32 appraisals, 7 families,\n"
+    ax1.set_title("32 candidate elements in 7 families:\n"
                   "action affinities (structural calibration)",
                   fontsize=9.5, color=INK)
     ax1.grid(False)
@@ -69,7 +69,7 @@ def plot_table(res: dict, aux: dict, path: str) -> None:
     ax2.set_xticks(range(len(R.ELEMENTS)))
     ax2.set_xticklabels(R.ELEMENTS, fontsize=6.0, rotation=90)
     ax2.invert_yaxis()
-    ax2.set_title("the compounds: 40 named baits as sparse formulas\n"
+    ax2.set_title("40 named baits as element formulas\n"
                   "(colored by vernacular family)", fontsize=9.5, color=INK)
     ax2.grid(True, color=GRID, lw=0.4, alpha=0.6)
     _style(ax2)
@@ -93,7 +93,7 @@ def plot_mendeleev(res: dict, aux: dict, path: str) -> None:
         ax1.scatter(P[i, 0], P[i, 1], s=42, c=FAM_COLOR[fam],
                     edgecolors=INK, linewidths=0.4, zorder=3)
     rg = names.index("ragebait")
-    ax1.annotate("ragebait:\na cluster of one", (P[rg, 0], P[rg, 1]),
+    ax1.annotate("ragebait\n(singleton cluster)", (P[rg, 0], P[rg, 1]),
                  fontsize=7.5, color=RED, ha="right", xytext=(-8, 10),
                  textcoords="offset points")
     for fam, c in FAM_COLOR.items():
@@ -102,7 +102,7 @@ def plot_mendeleev(res: dict, aux: dict, path: str) -> None:
     ax1.legend(frameon=False, fontsize=7, loc="lower right", ncol=2)
     ax1.set_xlabel("signature component 1", fontsize=8.5)
     ax1.set_ylabel("signature component 2", fontsize=8.5)
-    ax1.set_title(f"behavior redraws the families: cluster purity "
+    ax1.set_title(f"compounds by behavioral signature, cluster purity "
                   f"{per['family_recovery_purity']:.2f}", fontsize=9.5,
                   color=INK)
     ax1.grid(True, color=GRID, lw=0.5, alpha=0.7)
@@ -132,9 +132,9 @@ def plot_mendeleev(res: dict, aux: dict, path: str) -> None:
     ax2.set_xticklabels(R.ELEMENTS, fontsize=5.6, rotation=90)
     ax2.set_yticks(range(len(R.ELEMENTS)))
     ax2.set_yticklabels(R.ELEMENTS, fontsize=5.6)
-    ax2.set_title(f"the empty cells: {per['pairs_realized']} realized pairs, "
+    ax2.set_title(f"element pairs: {per['pairs_realized']} realized, "
                   f"{per['pairs_empty']} unnamed\n(red: top predicted; "
-                  f"amber: the seed's two proposals)", fontsize=9.5,
+                  f"amber: two proposed compounds)", fontsize=9.5,
                   color=INK)
     ax2.grid(False)
     _style(ax2)
@@ -155,12 +155,12 @@ def plot_ecology(res: dict, aux: dict, path: str) -> None:
              label="chronological: conflict share")
     nh = eco["no_habituation"]["feed_conflict_share_last100"]
     ax1.axhline(nh, color=RED, lw=1.2, ls="--")
-    ax1.annotate("no habituation: the feed locks onto conflict\n"
-                 f"at {nh:.2f} and never leaves", (len(t) * 0.99, nh - 0.025),
+    ax1.annotate("without habituation the conflict share\n"
+                 f"stays at {nh:.2f}", (len(t) * 0.99, nh - 0.025),
                  fontsize=7.8, color=RED, ha="right", va="top")
     ax1.set_xlabel("time step", fontsize=9)
     ax1.set_ylabel("conflict-family share", fontsize=9)
-    ax1.set_title("habituation is the ecosystem's own damper",
+    ax1.set_title("conflict share of the feed over time",
                   fontsize=10, color=INK)
     ax1.legend(frameon=False, fontsize=7.6, loc="lower center")
     ax1.grid(True, color=GRID, lw=0.5, alpha=0.7)

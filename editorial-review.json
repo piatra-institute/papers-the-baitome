@@ -1,0 +1,10 @@
+{
+  "manuscript_sha256": "172c787aadea9a0b7cc870439c23d5444f6a4a834fda09f8f935b73b7db659b8",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Prose revision: descriptive headings; 'this paper' 16 -> 0 and 'rather than' 16 -> 0; abstract rewritten (263 words); aphorisms and the closing epigram removed; one parameter count corrected (145 -> 146); an author-less citation restored to its authors; all other numbers and citations preserved."
+}

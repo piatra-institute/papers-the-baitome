@@ -2,6 +2,16 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-22 — prose revision
+
+Prose rewritten against the house standards. Headings made descriptive (Introduction, Prior evidence, Five measures of bait, Elements, cues, actions and catalysts, Behavioral signatures and family recovery, Identifiability of the registry, Creator-user-platform ecology, Field programme and failure criteria, Ethics and dual use, Objections, Falsification, Conclusion, Reproducibility).
+
+Corrections found during the pass:
+  - The bond-design parameter count was stated as 145; results.json gives 146 (periodicity.n_params_linear_plus_realized_bonds), and the stated deficit of 106 = 146 - 40 already used 146. Text corrected.
+  - The 2026 hybrid reward-learning-and-habit study was cited as "(Nature Communications, 2026)" with the journal as author. Crossref (10.1038/s41467-026-73547-6) gives Turner, Gunschera, Subrahmanya, Salecha, Eichstaedt, Palminteri and Orben, volume 17, article 7170; the in-text citation and the bibliography entry now name them.
+  - The Mendeleev figure title referred to "the seed's two proposals"; now "two proposed compounds".
+results.json unchanged by the figure edits.
+
 ## 2026-08-26 — v1, first full draft to publication
 
 Scope: the entire paper, simulation, and evidence base, from the seed chat to publication.

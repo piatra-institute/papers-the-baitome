@@ -1,14 +1,32 @@
 slug: the-baitome
 web_slug: the-baitome
-title: "The Baitome: Toward a Compositional and Mathematical Theory of Digital Bait"
-header: "The Baitome"
-created: "2026-08"        # inception month (drives YYYY/MM archive path)
-date: "August 2026"           # publication month, e.g. "May 2026" (shown on web)
+title: 'The Baitome: Toward a Compositional and Mathematical Theory of Digital Bait'
+header: The Baitome
+created: 2026-08
+date: August 2026
 paper_dir: paper
 has_simulation: true
-claims_target: results.json   # results.json | claim-ledger | none
+claims_target: results.json
 repo: git@github.com:piatra-institute/papers-the-baitome.git
 github: https://github.com/piatra-institute/papers-the-baitome
-status: published             # draft | built | published
-abstract: |-
-  In December 2025 the Oxford lexicographers chose "rage bait" as their word of the year, reporting a threefold rise in use, and the internet's working vocabulary now counts dozens of named baits: clickbait, flamebait, fearbait, thirst bait, correction bait, dunk bait, FOMO bait, engagement bait. These names mix levels. Some name a target action, some an emotion, some a social outcome, some a platform objective, some a deceptive relation, and a single post can carry five of the names at once. This paper proposes that named baits are compounds rather than elements, builds the system that claim requires, and computes its structure. The architecture has four layers: about 32 candidate psychological elements in 7 appraisal families, an action alphabet of 12 from stopping the scroll to disclosing credentials, action-specific bonds between elements, and platform conditions as catalysts that multiply exposure without creating appraisal. A registry of 40 named compounds as sparse formulas, mean size 3.3, exhibits the diagnosis quantitatively: 0 formula collisions against 50 collisions in top-action space, so the names discriminate worse than the composition. A generative mechanism-to-action model with bonds turns periodicity into computation. Clustering compounds by behavioral signature alone recovers the vernacular families at purity 0.6, and the failures are the findings: ragebait is a cluster of one, fearbait files with phishing in a fear-and-return group, intelligence bait behaves as clickbait in dress clothes. The registry identifies the linear element affinities at correlation 0.95 while leaving the bond design rank-deficient by 106 parameters, so the existing vocabulary cannot identify most of its own chemistry; 382 of 496 element pairs appear in no named compound, and ranking these empty cells by predicted leverage yields a synthesis list on which the paper's two seed proposals sit mid-table, at ranks 148 and 160, behind unnamed combinations such as dread-curiosity. A held-out compound's signature is predictable from its formula at relative error 0.20 where the family mean gives 0.63, stated as internal consistency of the framework rather than empirical validation. An ecology of reinforcement-learning creators, habituating users, and engagement ranking then prices the platform's catalysis: ranking concentrates production and tilts the feed toward conflict, and the sharpest result is the counterfactual, since without habituation the feed locks onto conflict at 0.64 and never leaves, while habituating users dissolve the tilt into churn, 115 dominance switches against 0. The rage-farming dystopia assumes non-habituating users; the ecosystem's own damper is fatigue. The paper states the field programme, the Mendeleev criteria, and the kill conditions under which the periodic table would remain a metaphor.
+status: published
+abstract: 'Oxford''s lexicographers chose "rage bait" as the word of the year for 2025, reporting a threefold
+  rise in use, and the working vocabulary of the internet now names dozens of baits: clickbait, flamebait,
+  fearbait, thirst bait, correction bait, dunk bait, FOMO bait, engagement bait. The names mix levels
+  of description (a target action, an emotion, a social outcome, a platform objective, a deceptive relation),
+  and one post can carry several of them. We treat named baits as compounds of psychological elements
+  and build a four-layer system: about 32 candidate appraisal elements in 7 families, an alphabet of 12
+  actions, action-specific bonds between elements, and platform conditions acting as catalysts that multiply
+  exposure without creating appraisal. A registry of 40 named baits as sparse formulas (mean size 3.3)
+  has 0 formula collisions against 50 collisions in top-action space. Clustering compounds by simulated
+  behavioral signature recovers the vernacular families at purity 0.6: ragebait forms a singleton cluster,
+  and fearbait groups with phishing. The registry identifies linear element affinities (correlation 0.95),
+  but the bond design is rank-deficient by 106 parameters, and 382 of 496 element pairs occur in no named
+  compound. A held-out compound''s signature is predicted from its formula with relative error 0.20, against
+  0.63 for the family mean, a test of internal consistency only. In an ecology of learning creators, habituating
+  users and engagement ranking, ranking concentrates production and tilts the feed toward conflict; without
+  habituation the conflict share locks at 0.64, and with it dominance changes 115 times. We specify the
+  field programme and the criteria under which the periodic-table analogy would fail.'
+web_blurb: Named baits such as clickbait and ragebait treated as compounds of about 32 appraisal elements.
+  A registry of 40 baits shows that the vocabulary cannot identify most element interactions, and user
+  habituation breaks the rage-farming lock.
