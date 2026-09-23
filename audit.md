@@ -2,6 +2,17 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-23 — structured-evidence migration
+
+Structured-evidence migration (references and claims).
+- references.yaml: 24 CSL entries. 1 resolved through doi.org (turner2026), 15 matched in Crossref, aubin2025 completed from its DOI record (10.1038/s41598-024-81575-9, article 994), and 7 entered by hand (brehm1966, cialdini1984, simon1971, tajfel1979, mendeleev1869, meta2017, oup2025 renamed from oxford2025; the two web documents re-fetched). In-text citations converted to Pandoc [@id]; legacy list replaced by the citeproc list.
+- Bibliographic corrections: molina2021 has six authors in the Crossref record (Molina, Sundar, Rony, Hassan, Le, Lee), the legacy entry four; aubin2025 gained its DOI and article number; meta2017 dated 18 December 2017 from the page. No prose change (the text cites "Molina et al.").
+- analyses.py: added read-only fields /periodicity/clusters and /periodicity/ragebait_cluster_size so the cluster statements in the prose are checkable; every pre-existing value unchanged.
+- claims.yaml: 62 claims (40 computation, 11 source, 5 interpretation, 3 definition, 2 assumption, 1 normative). Source claims checked against Crossref/OpenAlex abstracts (Robertson et al., Molina et al., Rathje et al., Lerner and Keltner, Turner et al., Aubin Le Quéré and Matias, Gray et al., Reynolds and John, Luo et al., Lindström et al., Brady et al. 2021) and the re-fetched OUP and Meta pages.
+- Unverified, not bound: Pennycook et al. (no abstract retrievable; the "one-line accuracy prompt" statement rests on the original verification), Crockett (2017) outrage economics (no abstract), Moors et al. and the Cialdini/Brehm/Tajfel/Simon attributions (conceptual, book-level).
+- Execution receipt: run id baitome (verification/baitome.json), `uv run python run_all.py`, 19/19 invariants, all prior results.json values reproduced.
+- metadata claims_target: claim-ledger.
+
 ## 2026-09-22 — prose revision
 
 Prose rewritten against the house standards. Headings made descriptive (Introduction, Prior evidence, Five measures of bait, Elements, cues, actions and catalysts, Behavioral signatures and family recovery, Identifiability of the registry, Creator-user-platform ecology, Field programme and failure criteria, Ethics and dual use, Objections, Falsification, Conclusion, Reproducibility).

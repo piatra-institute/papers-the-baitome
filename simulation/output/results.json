@@ -33,6 +33,61 @@
       "purity bait",
       "guilt bait"
     ],
+    "clusters": [
+      [
+        "thirst bait",
+        "aspiration bait",
+        "parasocial bait",
+        "FOMO bait",
+        "giveaway bait",
+        "social-proof bait"
+      ],
+      [
+        "clickbait",
+        "thumbnail bait",
+        "shockbait",
+        "mystery bait",
+        "challenge bait",
+        "intelligence bait"
+      ],
+      [
+        "watchbait",
+        "fearbait",
+        "doombait",
+        "streak bait",
+        "notification bait",
+        "phishing bait",
+        "scam bait",
+        "credential bait"
+      ],
+      [
+        "tribal bait",
+        "identity bait",
+        "validation bait",
+        "virtue bait",
+        "nostalgia bait",
+        "sympathy bait",
+        "grief bait",
+        "vulnerability bait",
+        "rescue bait"
+      ],
+      [
+        "ragebait"
+      ],
+      [
+        "flamebait",
+        "trollbait",
+        "controversy bait",
+        "hot-take bait",
+        "correction bait",
+        "dunk bait",
+        "concern bait",
+        "provocation bait",
+        "purity bait",
+        "guilt bait"
+      ]
+    ],
+    "ragebait_cluster_size": 1,
     "linear_recovery_correlation": 0.945382,
     "rank_incidence": 31,
     "n_elements_used": 31,

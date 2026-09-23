@@ -1,0 +1,431 @@
+# CSL references with stable IDs; cite with Pandoc [@id] syntax.
+# Migrated from the legacy inline bibliography. Entries with a DOI were resolved through doi.org
+# content negotiation (CSL-JSON) and checked for year and title; others were matched in Crossref
+# or entered by hand. Provenance per entry is in sources.md.
+references:
+- id: aubin2025
+  type: article-journal
+  title: 'When Curiosity Gaps Backfire: Effects of Headline Concreteness on Information Selection Decisions'
+  author:
+  - family: Aubin Le Quéré
+    given: Marianne
+  - family: Matias
+    given: J. Nathan
+  container-title: Scientific Reports
+  volume: '15'
+  page: '994'
+  issued:
+    date-parts:
+    - - 2025
+      - 1
+      - 6
+  DOI: 10.1038/s41598-024-81575-9
+- id: brady2021
+  type: article-journal
+  title: How social learning amplifies moral outrage expression in online social networks
+  author:
+  - given: William J.
+    family: Brady
+  - given: Killian
+    family: McLoughlin
+  - given: Tuan N.
+    family: Doan
+  - given: Molly J.
+    family: Crockett
+  container-title: Science Advances
+  volume: '7'
+  issue: '33'
+  DOI: 10.1126/sciadv.abe5641
+  issued:
+    date-parts:
+    - - 2021
+- id: brady2017
+  type: article-journal
+  title: Emotion shapes the diffusion of moralized content in social networks
+  author:
+  - given: William J.
+    family: Brady
+  - given: Julian A.
+    family: Wills
+  - given: John T.
+    family: Jost
+  - given: Joshua A.
+    family: Tucker
+  - given: Jay J.
+    family: Van Bavel
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '114'
+  issue: '28'
+  page: 7313-7318
+  DOI: 10.1073/pnas.1618923114
+  issued:
+    date-parts:
+    - - 2017
+- id: brehm1966
+  type: book
+  title: A Theory of Psychological Reactance
+  author:
+  - family: Brehm
+    given: Jack W.
+  publisher: Academic Press
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1966
+- id: cialdini1984
+  type: book
+  title: 'Influence: The Psychology of Persuasion'
+  author:
+  - family: Cialdini
+    given: Robert B.
+  publisher: William Morrow
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1984
+- id: crockett2017
+  type: article-journal
+  title: Moral outrage in the digital age
+  author:
+  - given: M. J.
+    family: Crockett
+  container-title: Nature Human Behaviour
+  volume: '1'
+  issue: '11'
+  page: 769-771
+  DOI: 10.1038/s41562-017-0213-3
+  issued:
+    date-parts:
+    - - 2017
+- id: gray2024
+  type: paper-conference
+  title: 'An Ontology of Dark Patterns Knowledge: Foundations, Definitions, and a Pathway for Shared Knowledge-Building'
+  author:
+  - given: Colin M.
+    family: Gray
+  - given: Cristiana Teixeira
+    family: Santos
+  - given: Nataliia
+    family: Bielova
+  - given: Thomas
+    family: Mildner
+  container-title: Proceedings of the CHI Conference on Human Factors in Computing Systems
+  page: 1-22
+  publisher: ACM
+  DOI: 10.1145/3613904.3642436
+  issued:
+    date-parts:
+    - - 2024
+- id: lerner2001
+  type: article-journal
+  title: Fear, anger, and risk.
+  author:
+  - given: Jennifer S.
+    family: Lerner
+  - given: Dacher
+    family: Keltner
+  container-title: Journal of Personality and Social Psychology
+  volume: '81'
+  issue: '1'
+  page: 146-159
+  DOI: 10.1037/0022-3514.81.1.146
+  issued:
+    date-parts:
+    - - 2001
+- id: lindstrom2021
+  type: article-journal
+  title: A computational reward learning account of social media engagement
+  author:
+  - given: Björn
+    family: Lindström
+  - given: Martin
+    family: Bellander
+  - given: David T.
+    family: Schultner
+  - given: Allen
+    family: Chang
+  - given: Philippe N.
+    family: Tobler
+  - given: David M.
+    family: Amodio
+  container-title: Nature Communications
+  volume: '12'
+  issue: '1'
+  DOI: 10.1038/s41467-020-19607-x
+  issued:
+    date-parts:
+    - - 2021
+- id: loewenstein1994
+  type: article-journal
+  title: 'The psychology of curiosity: A review and reinterpretation.'
+  author:
+  - given: George
+    family: Loewenstein
+  container-title: Psychological Bulletin
+  volume: '116'
+  issue: '1'
+  page: 75-98
+  DOI: 10.1037/0033-2909.116.1.75
+  issued:
+    date-parts:
+    - - 1994
+- id: luo2025
+  type: article-journal
+  title: Social feedback amplifies emotional language in online video live chats
+  author:
+  - given: Yishan
+    family: Luo
+  - given: Didier
+    family: Sornette
+  - given: Sandro Claudio
+    family: Lera
+  container-title: Communications Psychology
+  volume: '3'
+  issue: '1'
+  DOI: 10.1038/s44271-025-00370-y
+  issued:
+    date-parts:
+    - - 2025
+- id: mendeleev1869
+  type: article-journal
+  title: Über die Beziehungen der Eigenschaften zu den Atomgewichten der Elemente
+  author:
+  - family: Mendeleev
+    given: D.
+  container-title: Zeitschrift für Chemie
+  volume: '12'
+  page: 405-406
+  issued:
+    date-parts:
+    - - 1869
+  language: de
+- id: meta2017
+  type: webpage
+  title: 'News Feed FYI: Fighting Engagement Bait on Facebook'
+  author:
+  - literal: Meta
+  container-title: Meta Newsroom
+  issued:
+    date-parts:
+    - - 2017
+      - 12
+      - 18
+  URL: https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/
+- id: molina2021
+  type: paper-conference
+  title: Does Clickbait Actually Attract More Clicks? Three Clickbait Studies You Must Read
+  author:
+  - given: Maria D.
+    family: Molina
+  - given: S. Shyam
+    family: Sundar
+  - given: Md Main Uddin
+    family: Rony
+  - given: Naeemul
+    family: Hassan
+  - given: Thai
+    family: Le
+  - given: Dongwon
+    family: Lee
+  container-title: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems
+  page: 1-19
+  publisher: ACM
+  DOI: 10.1145/3411764.3445753
+  issued:
+    date-parts:
+    - - 2021
+- id: moors2013
+  type: article-journal
+  title: 'Appraisal Theories of Emotion: State of the Art and Future Development'
+  author:
+  - given: Agnes
+    family: Moors
+  - given: Phoebe C.
+    family: Ellsworth
+  - given: Klaus R.
+    family: Scherer
+  - given: Nico H.
+    family: Frijda
+  container-title: Emotion Review
+  volume: '5'
+  issue: '2'
+  page: 119-124
+  DOI: 10.1177/1754073912468165
+  issued:
+    date-parts:
+    - - 2013
+- id: oup2025
+  type: webpage
+  title: The Oxford Word of the Year 2025 Is Rage Bait
+  author:
+  - literal: Oxford University Press
+  container-title: Oxford University Press
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 1
+  URL: https://corp.oup.com/news/the-oxford-word-of-the-year-2025-is-rage-bait/
+- id: pennycook2021
+  type: article-journal
+  title: Shifting attention to accuracy can reduce misinformation online
+  author:
+  - given: Gordon
+    family: Pennycook
+  - given: Ziv
+    family: Epstein
+  - given: Mohsen
+    family: Mosleh
+  - given: Antonio A.
+    family: Arechar
+  - given: Dean
+    family: Eckles
+  - given: David G.
+    family: Rand
+  container-title: Nature
+  volume: '592'
+  issue: '7855'
+  page: 590-595
+  DOI: 10.1038/s41586-021-03344-2
+  issued:
+    date-parts:
+    - - 2021
+- id: rathje2021
+  type: article-journal
+  title: Out-group animosity drives engagement on social media
+  author:
+  - given: Steve
+    family: Rathje
+  - given: Jay J.
+    family: Van Bavel
+  - given: Sander
+    family: van der Linden
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '118'
+  issue: '26'
+  DOI: 10.1073/pnas.2024292118
+  issued:
+    date-parts:
+    - - 2021
+- id: reynolds2026
+  type: article-journal
+  title: '‘That’s not where the cart goes!’: ragebait as accountability entertainment'
+  author:
+  - given: CJ
+    family: Reynolds
+  - given: Nicholas A.
+    family: John
+  container-title: Information, Communication & Society
+  page: 1-19
+  DOI: 10.1080/1369118X.2026.2665797
+  issued:
+    date-parts:
+    - - 2026
+- id: robertson2023
+  type: article-journal
+  title: Negativity drives online news consumption
+  author:
+  - given: Claire E.
+    family: Robertson
+  - given: Nicolas
+    family: Pröllochs
+  - given: Kaoru
+    family: Schwarzenegger
+  - given: Philip
+    family: Pärnamets
+  - given: Jay J.
+    family: Van Bavel
+  - given: Stefan
+    family: Feuerriegel
+  container-title: Nature Human Behaviour
+  volume: '7'
+  issue: '5'
+  page: 812-822
+  DOI: 10.1038/s41562-023-01538-4
+  issued:
+    date-parts:
+    - - 2023
+- id: simon1971
+  type: chapter
+  title: Designing Organizations for an Information-Rich World
+  author:
+  - family: Simon
+    given: Herbert A.
+  editor:
+  - family: Greenberger
+    given: Martin
+  container-title: Computers, Communications, and the Public Interest
+  publisher: Johns Hopkins Press
+  publisher-place: Baltimore
+  page: 37-72
+  issued:
+    date-parts:
+    - - 1971
+- id: tajfel1979
+  type: chapter
+  title: An Integrative Theory of Intergroup Conflict
+  author:
+  - family: Tajfel
+    given: Henri
+  - family: Turner
+    given: John C.
+  editor:
+  - family: Austin
+    given: William G.
+  - family: Worchel
+    given: Stephen
+  container-title: The Social Psychology of Intergroup Relations
+  publisher: Brooks/Cole
+  publisher-place: Monterey, CA
+  page: 33-47
+  issued:
+    date-parts:
+    - - 1979
+- id: turner2026
+  type: article-journal
+  title: A computational model of reward learning and habits on social media
+  author:
+  - given: Georgia
+    family: Turner
+  - given: Lukas J.
+    family: Gunschera
+  - given: Shashanka
+    family: Subrahmanya
+  - given: Aadesh
+    family: Salecha
+  - given: Johannes C.
+    family: Eichstaedt
+  - given: Stefano
+    family: Palminteri
+  - given: Amy
+    family: Orben
+  container-title: Nature Communications
+  volume: '17'
+  issue: '1'
+  DOI: 10.1038/s41467-026-73547-6
+  URL: http://dx.doi.org/10.1038/s41467-026-73547-6
+  issued:
+    date-parts:
+    - - 2026
+- id: wang2021
+  type: paper-conference
+  title: 'Clicks can be Cheating: Counterfactual Recommendation for Mitigating Clickbait Issue'
+  author:
+  - given: Wenjie
+    family: Wang
+  - given: Fuli
+    family: Feng
+  - given: Xiangnan
+    family: He
+  - given: Hanwang
+    family: Zhang
+  - given: Tat-Seng
+    family: Chua
+  container-title: Proceedings of the 44th International ACM SIGIR Conference on Research and Development
+    in Information Retrieval
+  page: 1288-1297
+  publisher: ACM
+  DOI: 10.1145/3404835.3462962
+  issued:
+    date-parts:
+    - - 2021

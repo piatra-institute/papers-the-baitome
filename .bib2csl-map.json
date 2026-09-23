@@ -1,0 +1,266 @@
+[
+ {
+  "id": "aubin2025",
+  "families": [
+   "Aubin Le Quéré",
+   "Matias"
+  ],
+  "authors_text": "Aubin Le Quéré, M., and Matias, J. N.",
+  "year": "2025",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "brady2021",
+  "families": [
+   "Brady",
+   "McLoughlin",
+   "Doan",
+   "Crockett"
+  ],
+  "authors_text": "Brady, W. J., McLoughlin, K., Doan, T. N., and Crockett, M. J.",
+  "year": "2021",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "brady2017",
+  "families": [
+   "Brady",
+   "Wills",
+   "Jost",
+   "Tucker",
+   "Van Bavel"
+  ],
+  "authors_text": "Brady, W. J., Wills, J. A., Jost, J. T., Tucker, J. A., and Van Bavel, J. J.",
+  "year": "2017",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "brehm1966",
+  "families": [
+   "Brehm"
+  ],
+  "authors_text": "Brehm, J. W.",
+  "year": "1966",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "cialdini1984",
+  "families": [
+   "Cialdini"
+  ],
+  "authors_text": "Cialdini, R. B.",
+  "year": "1984",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "crockett2017",
+  "families": [
+   "Crockett"
+  ],
+  "authors_text": "Crockett, M. J.",
+  "year": "2017",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "gray2024",
+  "families": [
+   "Gray",
+   "Santos",
+   "Bielova",
+   "Mildner"
+  ],
+  "authors_text": "Gray, C. M., Santos, C., Bielova, N., and Mildner, T.",
+  "year": "2024",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "lerner2001",
+  "families": [
+   "Lerner",
+   "Keltner"
+  ],
+  "authors_text": "Lerner, J. S., and Keltner, D.",
+  "year": "2001",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "lindstrom2021",
+  "families": [
+   "Lindström",
+   "Bellander",
+   "Schultner",
+   "Chang",
+   "Tobler",
+   "Amodio"
+  ],
+  "authors_text": "Lindström, B., Bellander, M., Schultner, D. T., Chang, A., Tobler, P. N., and Amodio, D. M.",
+  "year": "2021",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "loewenstein1994",
+  "families": [
+   "Loewenstein"
+  ],
+  "authors_text": "Loewenstein, G.",
+  "year": "1994",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "luo2025",
+  "families": [
+   "Luo",
+   "Sornette",
+   "Lera"
+  ],
+  "authors_text": "Luo, Y., Sornette, D., and Lera, S. C.",
+  "year": "2025",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "mendeleev1869",
+  "families": [
+   "Mendeleev"
+  ],
+  "authors_text": "Mendeleev, D.",
+  "year": "1869",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "meta2017",
+  "families": [
+   "Meta"
+  ],
+  "authors_text": "Meta",
+  "year": "2017",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "molina2021",
+  "families": [
+   "Molina",
+   "Sundar",
+   "Rony",
+   "Hassan"
+  ],
+  "authors_text": "Molina, M. D., Sundar, S. S., Rony, M. M. U., and Hassan, N.",
+  "year": "2021",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "moors2013",
+  "families": [
+   "Moors",
+   "Ellsworth",
+   "Scherer",
+   "Frijda"
+  ],
+  "authors_text": "Moors, A., Ellsworth, P. C., Scherer, K. R., and Frijda, N. H.",
+  "year": "2013",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "oup2025",
+  "families": [
+   "Oxford University Press"
+  ],
+  "authors_text": "Oxford University Press",
+  "year": "2025",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "pennycook2021",
+  "families": [
+   "Pennycook",
+   "Epstein",
+   "Mosleh",
+   "Arechar",
+   "Eckles",
+   "Rand"
+  ],
+  "authors_text": "Pennycook, G., Epstein, Z., Mosleh, M., Arechar, A. A., Eckles, D., and Rand, D. G.",
+  "year": "2021",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "rathje2021",
+  "families": [
+   "Rathje",
+   "Van Bavel"
+  ],
+  "authors_text": "Rathje, S., Van Bavel, J. J., and van der Linden, S.",
+  "year": "2021",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "reynolds2026",
+  "families": [
+   "Reynolds",
+   "John"
+  ],
+  "authors_text": "Reynolds, C., and John, N. A.",
+  "year": "2026",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "robertson2023",
+  "families": [
+   "Robertson",
+   "Pröllochs",
+   "Schwarzenegger",
+   "Pärnamets",
+   "Van Bavel",
+   "Feuerriegel"
+  ],
+  "authors_text": "Robertson, C. E., Pröllochs, N., Schwarzenegger, K., Pärnamets, P., Van Bavel, J. J., and Feuerriegel, S.",
+  "year": "2023",
+  "status": "VERIFIED-CROSSREF"
+ },
+ {
+  "id": "simon1971",
+  "families": [
+   "Simon"
+  ],
+  "authors_text": "Simon, H. A.",
+  "year": "1971",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "tajfel1979",
+  "families": [
+   "Tajfel",
+   "Turner"
+  ],
+  "authors_text": "Tajfel, H., and Turner, J. C.",
+  "year": "1979",
+  "status": "UNVERIFIED"
+ },
+ {
+  "id": "turner2026",
+  "families": [
+   "Turner",
+   "Gunschera",
+   "Subrahmanya",
+   "Salecha",
+   "Eichstaedt",
+   "Palminteri",
+   "Orben"
+  ],
+  "authors_text": "Turner, G., Gunschera, L. J., Subrahmanya, S., Salecha, A., Eichstaedt, J. C., Palminteri, S., and Orben, A.",
+  "year": "2026",
+  "status": "VERIFIED-DOI"
+ },
+ {
+  "id": "wang2021",
+  "families": [
+   "Wang",
+   "Feng",
+   "He",
+   "Zhang",
+   "Chua"
+  ],
+  "authors_text": "Wang, W., Feng, F., He, X., Zhang, H., and Chua, T.-S.",
+  "year": "2021",
+  "status": "VERIFIED-CROSSREF"
+ }
+]

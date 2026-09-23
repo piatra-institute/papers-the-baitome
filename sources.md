@@ -40,3 +40,7 @@ Every entry verified against Crossref or the live record before citation. Nothin
 - **Hawkes (1971) original**: the kinetics appear as formal extension only; Luo et al. carry the precedent.
 - **Upworthy Research Archive descriptor paper**: Robertson et al. carry the dataset's finding.
 - **Queerbaiting and race-baiting literatures**: historically specific concepts the scope section defers, as the seed also recommends.
+
+## Structured bibliography (2026-09-23)
+
+The inline reference list was migrated to references.yaml (CSL) and in-text citations to Pandoc [@id] syntax. Sixteen entries were resolved through doi.org or matched in Crossref and carry their DOIs; aubin2025 was completed from its DOI record (10.1038/s41598-024-81575-9, article 994). Six entries were entered by hand: the books brehm1966 and cialdini1984, the chapters simon1971 and tajfel1979 (with editors and page ranges from the standard records), mendeleev1869 (the German abstract in Zeitschrift für Chemie 12), and the web documents meta2017 (Meta newsroom, 18 December 2017) and oup2025 (renamed from oxford2025; OUP announcement, 1 December 2025), both re-fetched. The Crossref record for molina2021 lists six authors (Molina, Sundar, Rony, Hassan, Le and Lee); the legacy entry had four, and the structured entry follows the record. Source claims in claims.yaml were checked against abstracts from Crossref or OpenAlex and against the re-fetched web pages.

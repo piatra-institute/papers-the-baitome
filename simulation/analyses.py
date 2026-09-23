@@ -233,6 +233,9 @@ def run_periodicity(M: np.ndarray, B: np.ndarray, L: np.ndarray) -> dict:
     return {
         "family_recovery_purity": purity,
         "misfiled_compounds": misfiled,
+        # cluster memberships reported for the prose (read-only view of the clustering above)
+        "clusters": [[NAMES[i] for i in range(N_C) if lab[i] == j] for j in sorted(set(lab))],
+        "ragebait_cluster_size": int(sum(1 for i in range(N_C) if lab[i] == lab[NAMES.index("ragebait")])),
         "linear_recovery_correlation": float(corr),
         "rank_incidence": rank_M,
         "n_elements_used": int(used.sum()),

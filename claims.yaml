@@ -1,0 +1,712 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: 58d375128bf8978922cffb6215906bfce1818b62a46d98213b652ae4b4078ced
+claims:
+- id: abs-elements
+  kind: computation
+  passage: 'We treat named baits as compounds of psychological elements and build a four-layer system:
+    about 32 candidate appraisal elements in 7 families, an alphabet of 12 actions, action-specific bonds
+    between elements, and platform conditions acting as catalysts that multiply exposure without creating
+    appraisal.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/n_elements
+    reported: '32'
+    decimals: 0
+    units: candidate elements
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-actions
+  kind: computation
+  passage: 'We treat named baits as compounds of psychological elements and build a four-layer system:
+    about 32 candidate appraisal elements in 7 families, an alphabet of 12 actions, action-specific bonds
+    between elements, and platform conditions acting as catalysts that multiply exposure without creating
+    appraisal.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/n_actions
+    reported: '12'
+    decimals: 0
+    units: actions
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-compounds
+  kind: computation
+  passage: A registry of 40 named baits as sparse formulas (mean size 3.3) has 0 formula collisions against
+    50 collisions in top-action space.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/n_compounds
+    reported: '40'
+    decimals: 0
+    units: named compounds
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-size
+  kind: computation
+  passage: A registry of 40 named baits as sparse formulas (mean size 3.3) has 0 formula collisions against
+    50 collisions in top-action space.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/mean_formula_size
+    reported: '3.3'
+    decimals: 1
+    units: elements per formula
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-collisions
+  kind: computation
+  passage: A registry of 40 named baits as sparse formulas (mean size 3.3) has 0 formula collisions against
+    50 collisions in top-action space.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/formula_collisions
+    reported: '0'
+    decimals: 0
+    units: identical formula pairs
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-action-collisions
+  kind: computation
+  passage: A registry of 40 named baits as sparse formulas (mean size 3.3) has 0 formula collisions against
+    50 collisions in top-action space.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/top2_action_collisions
+    reported: '50'
+    decimals: 0
+    units: compound pairs sharing top-two target actions
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-purity
+  kind: computation
+  passage: 'Clustering compounds by simulated behavioral signature recovers the vernacular families at
+    purity 0.6: ragebait forms a singleton cluster, and fearbait groups with phishing.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/family_recovery_purity
+    reported: '0.6'
+    decimals: 1
+    units: cluster purity
+    conditions: seeded run, structural calibration; k-means on z-scored signatures, k = 6
+- id: abs-linear
+  kind: computation
+  passage: The registry identifies linear element affinities (correlation 0.95), but the bond design is
+    rank-deficient by 106 parameters, and 382 of 496 element pairs occur in no named compound.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/linear_recovery_correlation
+    reported: '0.95'
+    decimals: 2
+    units: correlation of recovered and true affinities
+    conditions: seeded run, structural calibration
+- id: abs-deficit
+  kind: computation
+  passage: The registry identifies linear element affinities (correlation 0.95), but the bond design is
+    rank-deficient by 106 parameters, and 382 of 496 element pairs occur in no named compound.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/bond_design_deficit
+    reported: '106'
+    decimals: 0
+    units: rank deficit of the bond design
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-empty
+  kind: computation
+  passage: The registry identifies linear element affinities (correlation 0.95), but the bond design is
+    rank-deficient by 106 parameters, and 382 of 496 element pairs occur in no named compound.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/pairs_empty
+    reported: '382'
+    decimals: 0
+    units: element pairs in no named compound
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-pairs
+  kind: computation
+  passage: The registry identifies linear element affinities (correlation 0.95), but the bond design is
+    rank-deficient by 106 parameters, and 382 of 496 element pairs occur in no named compound.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/pairs_total
+    reported: '496'
+    decimals: 0
+    units: possible element pairs
+    conditions: registry v0.1 (simulation/registry.py)
+- id: abs-heldout
+  kind: computation
+  passage: A held-out compound's signature is predicted from its formula with relative error 0.20, against
+    0.63 for the family mean, a test of internal consistency only.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/heldout_relative_error/compositional
+    reported: '0.20'
+    decimals: 2
+    units: mean relative error
+    conditions: leave-one-out over 40 compounds
+- id: abs-heldout-fam
+  kind: computation
+  passage: A held-out compound's signature is predicted from its formula with relative error 0.20, against
+    0.63 for the family mean, a test of internal consistency only.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/heldout_relative_error/family_mean
+    reported: '0.63'
+    decimals: 2
+    units: mean relative error
+    conditions: family-mean baseline, leave-one-out
+- id: abs-lock
+  kind: computation
+  passage: In an ecology of learning creators, habituating users and engagement ranking, ranking concentrates
+    production and tilts the feed toward conflict; without habituation the conflict share locks at 0.64,
+    and with it dominance changes 115 times.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/no_habituation/feed_conflict_share_last100
+    reported: '0.64'
+    decimals: 2
+    units: conflict-family share of the feed
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking, no habituation
+- id: abs-switches
+  kind: computation
+  passage: In an ecology of learning creators, habituating users and engagement ranking, ranking concentrates
+    production and tilts the feed toward conflict; without habituation the conflict share locks at 0.64,
+    and with it dominance changes 115 times.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/engagement/dominance_switches_2nd_half
+    reported: '115'
+    decimals: 0
+    units: changes of the dominant compound
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking with habituation, second half of the run
+- id: intro-collisions
+  kind: computation
+  passage: In the registry built below, no two named baits share an element formula, while 50 pairs collide
+    on their top target actions, so the composition discriminates where the names do not.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/top2_action_collisions
+    reported: '50'
+    decimals: 0
+    units: compound pairs sharing top-two target actions
+    conditions: registry v0.1 (simulation/registry.py)
+- id: reg-compounds
+  kind: computation
+  passage: The registry holds 40 such compounds in 6 vernacular families, with mean formula size 3.3 and
+    no two formulas identical (Figure 1).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/n_families
+    reported: '6'
+    decimals: 0
+    units: vernacular families
+    conditions: registry v0.1 (simulation/registry.py)
+- id: reg-size
+  kind: computation
+  passage: The registry holds 40 such compounds in 6 vernacular families, with mean formula size 3.3 and
+    no two formulas identical (Figure 1).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /registry/mean_formula_size
+    reported: '3.3'
+    decimals: 1
+    units: elements per formula
+    conditions: registry v0.1 (simulation/registry.py)
+- id: purity-body
+  kind: computation
+  passage: Clustering the 40 signatures without access to names or formulas recovers the 6 families at
+    purity 0.6, and the misassignments are informative (Figure 2, left).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/family_recovery_purity
+    reported: '0.6'
+    decimals: 1
+    units: cluster purity
+    conditions: seeded run, structural calibration
+- id: fear-phishing
+  kind: interpretation
+  passage: Fearbait and doombait group with phishing, credential bait and streak bait in a fear-and-return
+    cluster, because doom-scrolling media and credential-harvesting scams share a basis of threat, uncertainty
+    and compulsive checking that the vernacular families separate.
+  rationale: 'The cluster memberships are stored in results.json (/periodicity/clusters/2: watchbait,
+    fearbait, doombait, streak bait, notification bait, phishing, scam and credential bait); the shared
+    basis of threat, uncertainty and checking is the paper''s reading of that grouping.'
+- id: ragebait-cluster
+  kind: interpretation
+  passage: 'Ragebait forms a cluster by itself: its 5-element formula with 2 bonds gives it a signature
+    unlike any other in the registry.'
+  rationale: results.json /periodicity/ragebait_cluster_size = 1 and /periodicity/clusters/4 = [ragebait];
+    the attribution to its five-element, two-bond formula is the paper's explanation.
+- id: linear-body
+  kind: computation
+  passage: Regressing signatures on formulas recovers the element affinities at a correlation of 0.95,
+    so 40 named compounds suffice to estimate what each element does alone.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/linear_recovery_correlation
+    reported: '0.95'
+    decimals: 2
+    units: correlation
+    conditions: seeded run, structural calibration
+- id: pairs-realized
+  kind: computation
+  passage: Of 496 possible element pairs, the named compounds realize 114, and the joint design of affinities
+    and realized-pair interactions has rank 40 against 146 parameters, a deficit of 106.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/pairs_realized
+    reported: '114'
+    decimals: 0
+    units: realized element pairs
+    conditions: registry v0.1 (simulation/registry.py)
+- id: rank-design
+  kind: computation
+  passage: Of 496 possible element pairs, the named compounds realize 114, and the joint design of affinities
+    and realized-pair interactions has rank 40 against 146 parameters, a deficit of 106.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/rank_full_design
+    reported: '40'
+    decimals: 0
+    units: rank of the joint design
+    conditions: registry v0.1 (simulation/registry.py)
+- id: params-design
+  kind: computation
+  passage: Of 496 possible element pairs, the named compounds realize 114, and the joint design of affinities
+    and realized-pair interactions has rank 40 against 146 parameters, a deficit of 106.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/n_params_linear_plus_realized_bonds
+    reported: '146'
+    decimals: 0
+    units: parameters (affinities plus realized-pair bonds)
+    conditions: registry v0.1 (simulation/registry.py)
+- id: deficit-body
+  kind: computation
+  passage: Of 496 possible element pairs, the named compounds realize 114, and the joint design of affinities
+    and realized-pair interactions has rank 40 against 146 parameters, a deficit of 106.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/bond_design_deficit
+    reported: '106'
+    decimals: 0
+    units: rank deficit
+    conditions: registry v0.1 (simulation/registry.py)
+- id: empty-body
+  kind: computation
+  passage: The 382 unrealized pairs are the empty cells of the table (Figure 2, right), and the model
+    ranks them by predicted leverage.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/pairs_empty
+    reported: '382'
+    decimals: 0
+    units: empty cells
+    conditions: registry v0.1 (simulation/registry.py)
+- id: rank-148
+  kind: computation
+  passage: 'Two compounds proposed during the design of the registry, praise-correction bait (elevation
+    with error and competence: publicly celebrating overlooked merit) and nostalgic-threat bait (memory
+    with threat and in-group: the narrative of a lost world), rank 148 and 160, in the middle of the list,
+    below many unnamed combinations.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/seed_predicted_cells_rank/VE_ER
+    reported: '148'
+    decimals: 0
+    units: rank among empty cells by predicted leverage
+    conditions: praise-correction pair (elevation, detectable error)
+- id: rank-160
+  kind: computation
+  passage: 'Two compounds proposed during the design of the registry, praise-correction bait (elevation
+    with error and competence: publicly celebrating overlooked merit) and nostalgic-threat bait (memory
+    with threat and in-group: the narrative of a lost world), rank 148 and 160, in the middle of the list,
+    below many unnamed combinations.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/seed_predicted_cells_rank/MM_TH
+    reported: '160'
+    decimals: 0
+    units: rank among empty cells by predicted leverage
+    conditions: nostalgic-threat pair (memory, threat)
+- id: heldout-comp
+  kind: computation
+  passage: Withholding each compound in turn, refitting, and predicting its signature from its formula
+    alone gives a mean relative error of 0.20, against 0.63 for the family-mean baseline and 0.80 for
+    the global mean.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/heldout_relative_error/compositional
+    reported: '0.20'
+    decimals: 2
+    units: mean relative error
+    conditions: leave-one-out
+- id: heldout-fam
+  kind: computation
+  passage: Withholding each compound in turn, refitting, and predicting its signature from its formula
+    alone gives a mean relative error of 0.20, against 0.63 for the family-mean baseline and 0.80 for
+    the global mean.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/heldout_relative_error/family_mean
+    reported: '0.63'
+    decimals: 2
+    units: mean relative error
+    conditions: family-mean baseline
+- id: heldout-glob
+  kind: computation
+  passage: Withholding each compound in turn, refitting, and predicting its signature from its formula
+    alone gives a mean relative error of 0.20, against 0.63 for the family-mean baseline and 0.80 for
+    the global mean.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/heldout_relative_error/global_mean
+    reported: '0.80'
+    decimals: 2
+    units: mean relative error
+    conditions: global-mean baseline
+- id: hhi-eng
+  kind: computation
+  passage: Engagement ranking concentrates production, with a Herfindahl index of 0.075 against 0.054,
+    and reduces diversity, with entropy 2.75 against 3.07 (Figure 3).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/engagement/hhi_mean_last100
+    reported: '0.075'
+    decimals: 3
+    units: Herfindahl index of production
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking
+- id: hhi-chron
+  kind: computation
+  passage: Engagement ranking concentrates production, with a Herfindahl index of 0.075 against 0.054,
+    and reduces diversity, with entropy 2.75 against 3.07 (Figure 3).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/chronological/hhi_mean_last100
+    reported: '0.054'
+    decimals: 3
+    units: Herfindahl index of production
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; chronological
+      exposure
+- id: ent-eng
+  kind: computation
+  passage: Engagement ranking concentrates production, with a Herfindahl index of 0.075 against 0.054,
+    and reduces diversity, with entropy 2.75 against 3.07 (Figure 3).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/engagement/entropy_mean_last100
+    reported: '2.75'
+    decimals: 2
+    units: production entropy (nats)
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking
+- id: ent-chron
+  kind: computation
+  passage: Engagement ranking concentrates production, with a Herfindahl index of 0.075 against 0.054,
+    and reduces diversity, with entropy 2.75 against 3.07 (Figure 3).
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/chronological/entropy_mean_last100
+    reported: '3.07'
+    decimals: 2
+    units: production entropy (nats)
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; chronological
+      exposure
+- id: feed-eng
+  kind: computation
+  passage: The feed shifts toward the conflict family, 0.28 against 0.27, and the shift is larger in the
+    feed than in production, so ranking changes what is seen more than what is made.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/engagement/feed_conflict_share_last100
+    reported: '0.28'
+    decimals: 2
+    units: conflict share of the feed
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking
+- id: feed-chron
+  kind: computation
+  passage: The feed shifts toward the conflict family, 0.28 against 0.27, and the shift is larger in the
+    feed than in production, so ranking changes what is seen more than what is made.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/chronological/feed_conflict_share_last100
+    reported: '0.27'
+    decimals: 2
+    units: conflict share of the feed
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; chronological
+      exposure
+- id: lock-064
+  kind: computation
+  passage: 'When users never tire, the same ecology locks: conflict takes 0.64 of the feed, the dominant
+    compound never changes, and the system remains in the rage-farming equilibrium described in public
+    debate.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/no_habituation/feed_conflict_share_last100
+    reported: '0.64'
+    decimals: 2
+    units: conflict share of the feed
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking, no habituation
+- id: switches-115
+  kind: computation
+  passage: With habituation the lock gives way to turnover, with 115 changes of the dominant compound
+    in the second half of the run under ranking, as formats rise, exhaust their elements' susceptibility
+    and are replaced.
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/engagement/dominance_switches_2nd_half
+    reported: '115'
+    decimals: 0
+    units: changes of the dominant compound
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps; engagement
+      ranking with habituation
+- id: caption-064
+  kind: computation
+  passage: 'Left: conflict share of the feed under engagement ranking and under chronological exposure,
+    with the no-habituation counterfactual at 0.64.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /ecology/no_habituation/feed_conflict_share_last100
+    reported: '0.64'
+    decimals: 2
+    units: conflict share of the feed
+    conditions: ecology, 60 creators, 400 steps, seed 20260826, averages over the last 100 steps
+- id: caption-purity
+  kind: computation
+  passage: 'Left: compounds clustered by behavioral signature alone, colored by vernacular family; purity
+    0.6, with ragebait a singleton cluster.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: baitome
+    pointer: /periodicity/family_recovery_purity
+    reported: '0.6'
+    decimals: 1
+    units: cluster purity
+    conditions: seeded run, structural calibration
+- id: functional-bait
+  kind: definition
+  passage: A framing is functional bait for an action when it raises that action's probability relative
+    to a content-equivalent neutral framing; the difference is its bait leverage, which is specific to
+    the action, since a framing can raise clicking while lowering completion.
+  rationale: Central operational definition; bait leverage is action-specific, which the rest of the architecture
+    depends on.
+- id: five-measures
+  kind: definition
+  passage: These five are separate measurements.
+  rationale: Leverage, strategy, deception, manipulation and harm are kept as separate axes; the paper
+    declines a single bait score.
+- id: compound-formula
+  kind: definition
+  passage: A named bait is then a sparse formula.
+  rationale: 'Defines the registry''s representation: a named bait is a set of appraisal elements.'
+- id: catalysts
+  kind: assumption
+  passage: 'Platforms act as catalysts: ranking, visible counts, low friction and personalization multiply
+    the behavioral yield of an appraisal without creating it.'
+  rationale: 'Modelling assumption: platform conditions multiply behavioral yield without contributing
+    appraisal; the ecology implements ranking as an exposure multiplier.'
+- id: structural-calibration
+  kind: assumption
+  passage: 'The calibration is structural: the numbers describe the model''s geometry, with directions
+    anchored to the evidence above, and every downstream claim concerns the shape of the system.'
+  rationale: Affinities and bonds are set by the authors with directions anchored to the cited evidence;
+    downstream numbers describe the model's geometry, not measured effects.
+- id: identifiability-calibration-free
+  kind: interpretation
+  passage: 'This result depends only on which formulas exist and is independent of calibration: naming
+    has covered less than a quarter of the pair space, and estimation cannot go beyond it.'
+  rationale: The rank and pair counts are properties of the incidence structure of the registry, not of
+    the affinity values.
+- id: heldout-internal
+  kind: interpretation
+  passage: Because the data are generated by the compositional model, this test shows that the Mendeleev
+    test is well-posed and discriminating; it does not pass that test, and we treat it as internal consistency.
+  rationale: 'States the evidential limit of the held-out test: the generating model and the predictor
+    share structure.'
+- id: habituation-turnover
+  kind: interpretation
+  passage: Accounts of engagement optimization that predict permanent capture by outrage implicitly assume
+    users who do not habituate.
+  rationale: Drawn from the contrast between the habituation and no-habituation runs; a property of the
+    model whose plausibility rests on the cited learning literature.
+- id: ethics-benign-cells
+  kind: normative
+  passage: 'Synthesis experiments use benign cells: the empty-cell list is public so that the first syntheses
+    can be chosen for harmlessness, and deliberately inflammatory stimuli are not released for diffusion
+    measurement.'
+  rationale: Dual-use commitment governing which empty cells may be synthesized first.
+- id: oup-rage-bait
+  kind: source
+  passage: Oxford's lexicographers named "rage bait" the word of 2025, defining it as content deliberately
+    designed to elicit anger in order to drive traffic, and reported a threefold increase in usage over
+    12 months [@oup2025].
+  evidence:
+    citation_id: oup2025
+    locator: OUP announcement, 1 December 2025
+    verified: true
+    verification_note: 'Fetched corp.oup.com: rage bait defined as online content deliberately designed
+      to elicit anger or outrage ... to increase traffic or engagement; ''The word has tripled in usage
+      in the last 12 months.'''
+- id: meta-engagement-bait
+  kind: source
+  passage: Dozens of related terms surround it, and platforms maintain their own policy categories, defining
+    engagement bait through the actions it solicits [@meta2017].
+  evidence:
+    citation_id: meta2017
+    locator: Newsroom post, 18 December 2017
+    verified: true
+    verification_note: 'Fetched about.fb.com: posts that goad people into interacting through likes, shares,
+      comments and other actions are ''engagement bait'' and will be demoted.'
+- id: robertson-23
+  kind: source
+  passage: 'On clicking: in roughly 105,000 headline experiments from the Upworthy archive, each additional
+    negative word raised click-through by about 2.3 percent [@robertson2023]; headline concreteness has
+    non-monotonic effects, with maximal vagueness underperforming, so the curiosity gap has an optimum
+    [@aubin2025]; and headlines labeled clickbait by detectors did not reliably attract more clicks, with
+    4 automated detectors agreeing on the label 47 percent of the time, consistent with a category that
+    is not a natural kind [@molina2021].'
+  evidence:
+    citation_id: robertson2023
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: ~105,000 variations of Upworthy news stories; for a headline
+      of average length each additional negative word increased click-through rate by 2.3%.'
+- id: molina-47
+  kind: source
+  passage: 'On clicking: in roughly 105,000 headline experiments from the Upworthy archive, each additional
+    negative word raised click-through by about 2.3 percent [@robertson2023]; headline concreteness has
+    non-monotonic effects, with maximal vagueness underperforming, so the curiosity gap has an optimum
+    [@aubin2025]; and headlines labeled clickbait by detectors did not reliably attract more clicks, with
+    4 automated detectors agreeing on the label 47 percent of the time, consistent with a category that
+    is not a natural kind [@molina2021].'
+  evidence:
+    citation_id: molina2021
+    locator: Abstract (Study 3)
+    verified: true
+    verification_note: 'OpenAlex abstract: users do not reliably click more on classifier-labeled clickbait;
+      in a computational analysis of four classifiers the detectors agreed on a classification only 47%
+      of the time.'
+- id: rathje-outgroup
+  kind: source
+  passage: 'On sharing: moral-emotional words increase diffusion [@brady2017], and across 2.73 million
+    posts, out-group language was the strongest predictor, roughly doubling sharing [@rathje2021], which
+    justifies treating out-group reference as a separate element from negativity.'
+  evidence:
+    citation_id: rathje2021
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: N = 2,730,215 posts; posts about the political out-group were
+      shared about twice as often; out-group language was the strongest predictor of shares.'
+- id: lerner-fear-anger
+  kind: source
+  passage: Fear and anger produce opposite risk judgments because they differ in appraised certainty and
+    control [@lerner2001], so "negative emotion" cannot serve as a primitive.
+  evidence:
+    citation_id: lerner2001
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: fear and anger have opposite effects on risk perception; appraisals
+      of certainty and control moderated and mediated the effects.'
+- id: turner-2696
+  kind: source
+  passage: Outrage has its own economics [@crockett2017], and outrage expression is learned from social
+    feedback [@brady2021], as is posting behavior generally, first described as reward learning [@lindstrom2021]
+    and now best fitted, in 2,696 users with a preregistered replication, by a hybrid of reinforcement
+    learning and habit [@turner2026].
+  evidence:
+    citation_id: turner2026
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: Twitter dataset n = 2696 users including a preregistered replication;
+      a hybrid reinforcement-learning and habitual process underlies posting.'
+- id: aubin-optimum
+  kind: source
+  passage: 'On clicking: in roughly 105,000 headline experiments from the Upworthy archive, each additional
+    negative word raised click-through by about 2.3 percent [@robertson2023]; headline concreteness has
+    non-monotonic effects, with maximal vagueness underperforming, so the curiosity gap has an optimum
+    [@aubin2025]; and headlines labeled clickbait by detectors did not reliably attract more clicks, with
+    4 automated detectors agreeing on the label 47 percent of the time, consistent with a category that
+    is not a natural kind [@molina2021].'
+  evidence:
+    citation_id: aubin2025
+    locator: Abstract
+    verified: true
+    verification_note: 'Crossref abstract: meta-analysis of 8977 headline experiments; effects of concreteness
+      depend on baseline concreteness, a curvilinear relationship in which just the right amount of information
+      maximizes clickthrough.'
+- id: gray-ten-taxonomies
+  kind: source
+  passage: The nearest methodological precedent is the harmonization of ten dark-pattern taxonomies into
+    one multilevel ontology [@gray2024].
+  evidence:
+    citation_id: gray2024
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: harmonizes ten regulatory and academic dark-pattern taxonomies
+      into a three-level ontology of 64 types.'
+- id: reynolds-formula
+  kind: source
+  passage: Ethnographically, ragebait production is formulaic and repeatable, a genre of accountability
+    entertainment with a recipe [@reynolds2026].
+  evidence:
+    citation_id: reynolds2026
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: accountability entertainment; ragebait appeals to producers
+      because it is formulaic, repeatable and controlled.'
+- id: luo-feedback
+  kind: source
+  passage: 'The result is a property of the model, and its plausibility rests on the learning literature
+    it instantiates: creators learn by reinforcement and habit [@lindstrom2021; @turner2026], outrage
+    expression responds to feedback [@brady2021], and social feedback amplifies emotional language in
+    self-exciting cascades [@luo2025].'
+  evidence:
+    citation_id: luo2025
+    locator: Abstract
+    verified: true
+    verification_note: 'OpenAlex abstract: multivariate Hawkes self-exciting process for emotions in YouTube
+      Live chats; expression up to four times more strongly driven by peer interaction than by video content.
+      Lindström et al. and Turner et al. abstracts confirm reward-learning and hybrid habit accounts of
+      posting; Brady et al. (2021) abstract confirms social reinforcement of outrage.'
+runs:
+- id: baitome
+  required: true
+  record: verification/baitome.json
